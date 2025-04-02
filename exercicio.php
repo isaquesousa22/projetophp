@@ -1,8 +1,8 @@
 <?php 
 
 $num1 = 8.0;
-$num2= 10.0;
-$r= $num1 + $num2;
+$num2 = 10.0;
+$r = $num1 + $num2;
 
 
  if($r > 20){
