@@ -27,16 +27,21 @@ $pessoas = [
     ]
 ];
 
-foreach ($pessoas as $pessoa) {
-    $n = $pessoa["nome"];
-    $s = $pessoa["sexo"];
-    $i = $pessoa["idade"];
-    $sn = $pessoa["sobrenome"];
+echo "Programa para verificar a eligibilidade da pessoa, menor de 25 anos e do sexo feminino passou";
 
-    if ($i < 25 && $s == "feminino") {
-        echo "$n $sn</br>Aceita<br/>";
+echo "<br/>";
+echo "<br/>";
+
+foreach ($pessoas as $pessoa) {
+    $nome = $pessoa["nome"];
+    $sexo = $pessoa["sexo"];
+    $idade = $pessoa["idade"];
+    $sobrenome = $pessoa["sobrenome"];
+
+    if ($idade < 25 && $sexo == "feminino") {
+        echo "$nome $sobrenome</br>Aceita<br/>";
     } else {
-        echo "$n $sn</br>Não aceita<br/>";
+        echo "$nome $sobrenome</br>Não aceita<br/>";
     }
     echo "<br/>"; 
 }
